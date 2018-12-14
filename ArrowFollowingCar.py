@@ -96,31 +96,38 @@ while 1:
        print("forward")
        GPIO.output(LM,True) #=====>this is ignored by all 4 Pi's
        GPIO.output(RM,True) #=====>this is ignored by all 4 Pi's
+       cam.release()
        time.sleep(1) #=====>this is respected and followed
+       CameraOpen()
        
        
     if len(GoodLeft)>len(GoodFwd) and len(GoodLeft)>len(GoodRight) and len(GoodLeft)>Threshold:
        print("left")
        GPIO.output(LM,False) #=====>this is ignored by all 4 Pi's
        GPIO.output(RM,True) #=====>this is ignored by all 4 Pi's
+       cam.release()
        time.sleep(0.65) #=====>this is respected and followed
+    
        GPIO.output(LM,True) #=====>this is ignored by all 4 Pi's
        GPIO.output(RM,True) #=====>this is ignored by all 4 Pi's
        print("mashy 3ala tool")
+       
        time.sleep(0.3) #=====>this is respected and followed
-
+       CameraOpen()
        
     if len(GoodRight)>len(GoodLeft) and len(GoodRight)>len(GoodFwd) and len(GoodRight)>Threshold:
        print("right")
       
        GPIO.output(LM,True) #=====>this is ignored by all 4 Pi's
        GPIO.output(RM,False) #=====>this is ignored by all 4 Pi's
-
+       cam.release()
        time.sleep(0.65) #=====>this is respected and followed
+       
        GPIO.output(LM,True) #=====>this is ignored by all 4 Pi's
        GPIO.output(RM,True) #=====>this is ignored by all 4 Pi's
+       
        time.sleep(0.3) #=====>this is respected and followed
-
+       CameraOpen()
        
     if len(GoodFwd)<(Threshold+1) and len(GoodLeft)<(Threshold+1) and len(GoodRight)<(Threshold+1):
                            
