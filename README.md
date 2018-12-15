@@ -69,16 +69,12 @@ A problem was found while testing realtime while using the time.sleep() function
 this was overcome by releasing the camera then re-opening it once again.
 
 
-
-
-
 ### Platforms required
 
 The main platforms and libraries needed are:
  - OpenCV
  - RPi.GPIO
  
-
 ## Project Video
 [Youtube](https://youtu.be/z3y1VNGsrEQ)
 
