@@ -6,7 +6,6 @@ A differential robot that uses a camera to follow arrows.
 - [Project Demo](#project-demo)
 - [Description](#description)
 - [Usage](#usage)
-- [Platforms required](#Platforms required)
 - [Project Video](#project-video)
 
 
