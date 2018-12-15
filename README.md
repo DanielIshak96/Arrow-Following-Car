@@ -1,8 +1,6 @@
 # Arrow-Following-Car
 A differential robot that uses a camera to follow arrows.
 
-# Control of car using hand gestures
-
 ## Table of contents
 - [Team Members](#team-members)
 - [Project Demo](#project-demo)
